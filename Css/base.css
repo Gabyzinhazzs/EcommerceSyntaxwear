@@ -1,4 +1,5 @@
 body{
+    background-color: black;
     font-family: var(--fonte-principal);
     color: #333333;
 }
