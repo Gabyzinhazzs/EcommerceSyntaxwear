@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,24 +8,52 @@
     <link rel="stylesheet" href="./Css/variables.css">
     <link rel="stylesheet" href="./Css/base.css">
     <link rel="stylesheet" href="./Css/layout.css">
-    <title>Syntaxwear Ecommerce</title>
+    <link rel="stylesheet" href="./Css/components/header.css">
+    <title>SyntaxWear - Tênis e Sneakers Online</title>
 </head>
+
 <body>
-    <header class="site-header" role="banner" aria-label="Cabeçalho do site">
-        <div class="container header-inner">
-            <a href="/" class="logo" aria-label="Syntaxwear — Página inicial">
-                <!-- Logo (macro) -->
+    <header class="site-header">
+        <h1>
+            <a href="/" title="SyntaxWear - Tênis e Sneakers Online">
+                <img src="./images/logo/logo.svg" alt="SyntaxWear - Tênis e Sneakers Online">
             </a>
+        </h1>
+        <nav class="nav-center" aria-label="Categorias principais">
+            <ul>
+                <li><a href="#">Masculino</a></li>
+                <li><a href="#">Feminino</a></li>
+                <li><a href="#">Outlet</a></li>
+            </ul>
+        </nav>
 
-            <nav id="main-nav" class="main-nav" aria-label="Navegação principal">
-                <ul class="nav-list">
-                    <!-- Itens de navegação (macro) -->
-                </ul>
-            </nav>
+        <nav class="nav-right" aria-label="Menu secundário (Nossas lojas, Sobre, Conta, Ajuda, Carrinho)">
+            <ul>
+                <li><a href="/lojas">Nossas lojas
+                    </a>
+                </li>
+                <li><a href="/sobre">Sobre
+                    </a>
+                </li>
+                <li><a href="/conta" aria-label="Minha conta">
+                        <img src="./images/icons/user.svg" alt="Minha conta">
+                    </a>
+                </li>
+                <li><a href="/ajuda" aria-label="Ajuda">
+                        <img src="./images/icons/help.svg" alt="Ajuda">
+                    </a>
+                </li>
+                <li>
+                    <a href="/carrinho" aria-label="Carrinho">
+                        <img src="./images/icons/bag.svg" alt="Carrinho">
+                    </a>
+                </li>
+            </ul>
+        </nav>
 
-            <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Alternar menu">
-                <!-- Toggle do menu (macro) -->
-            </button>
+        <button class="menu-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Alternar menu">
+            <!-- Toggle do menu (macro) -->
+        </button>
         </div>
     </header>
 
@@ -56,4 +85,5 @@
         </div>
     </footer>
 </body>
+
 </html>
